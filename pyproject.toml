@@ -57,12 +57,12 @@ Issues = "https://github.com/rlm-dev/rlm/issues"
 where = ["src"]
 
 [tool.black]
-line-length = 88  # use black's default line length instead of the project's 100
+line-length = 100  # project uses 100 char lines; reverting from upstream's 88
 target-version = ["py39", "py310", "py311"]
 
 [tool.isort]
 profile = "black"
-line_length = 88  # keep in sync with black line-length
+line_length = 100  # keep in sync with black line-length
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
